@@ -1,0 +1,23 @@
+<tr>
+  <td>
+    <%= image_tag product.image.tiny %>
+  </td>
+  <td>
+    <h4><%= product.name %></h4>
+    <br>
+    Product Detail <p><%= product.description %></p>
+  </td>
+  <br>
+  <td>
+    Quantity = <%= quantity %>
+  </td>
+  <br>
+  <td>
+    Total Price = <%= humanized_money_with_symbol product.price * quantity %>
+  </td>
+  <br>
+  <td>
+   Your order confirmation is sent to  <%= email %>
+  </td>
+
+</tr>
