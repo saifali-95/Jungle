@@ -1,6 +1,7 @@
 class CartsController < ApplicationController
 
-  def show
+  def show  
+    #Show empty cart and link to render to root if the cart is empty.
     if (cart.size == 0)
       render 'empty'
     else
