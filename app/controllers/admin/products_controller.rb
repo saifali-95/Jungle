@@ -1,4 +1,9 @@
+require 'dotenv'
+
 class Admin::ProductsController < ApplicationController
+  
+  #Authenicate username and password before a user can access admin controller
+  before_filter :authenticate
 
   def index
     @products = Product.order(id: :desc).all
@@ -35,6 +40,16 @@ class Admin::ProductsController < ApplicationController
       :image,
       :price
     )
+  end
+
+  #HTTP basic authentication, password and username is being imported from dotenv file.
+
+  protected
+
+  def authenticate
+    authenticate_or_request_with_http_basic do |username, password|
+      username == ENV["HTTP_username"] && password == ENV["HTTP_password"] 
+    end
   end
 
 end
