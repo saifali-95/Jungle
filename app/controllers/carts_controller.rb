@@ -1,6 +1,4 @@
 class CartsController < ApplicationController
-
-  before_filter :authorize
   
   def show  
     #Show empty cart and link to render to root if the cart is empty.
