@@ -21,8 +21,8 @@ RSpec.feature "Click Products Detail", type: :feature, js: true do
     visit root_path
 
     # click_on "Details"
-    @one_product = first(".product")
-    within(@one_product) do
+    @product = first(".product")
+    within(@product) do
       click_on("Details")
       
       page.should have_content
@@ -30,7 +30,7 @@ RSpec.feature "Click Products Detail", type: :feature, js: true do
       save_screenshot
 
       #DEBUG /VERIFY
-      puts page.html
+      #puts page.html
     end
 
     # DEBUG / VERIFY
