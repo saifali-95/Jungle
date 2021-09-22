@@ -45,6 +45,7 @@ group :development, :test do
   gem 'quiet_assets'
   gem 'dotenv-rails'
   gem 'rspec-rails', '~> 3.5'
+  gem 'phantomjs', :require => 'phantomjs/poltergeist'
 end
 
 group :development do
