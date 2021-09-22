@@ -2,6 +2,13 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
+## Final Product
+
+!["Screenshort of Home Page"](https://github.com/saifali-95/Jungle/blob/master/pictures/Jungle%201.png)
+!["Screenshort of Admin Authentication"](https://github.com/saifali-95/Jungle/blob/master/pictures/Admin%20Authentication%20Jungle.png)
+
+
+
 ## Additional Steps for Apple M1 Machines
 
 1. Make sure that you are runnning Ruby 2.6.6 (`ruby -v`)
